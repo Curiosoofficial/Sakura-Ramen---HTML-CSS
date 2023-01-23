@@ -1,0 +1,298 @@
+@import url('https://fonts.googleapis.com/css2?family=Economica:wght@700&family=Raleway:wght@400;700&display=swap');
+
+* {
+    padding: 0;
+    margin: 0;
+}
+
+.mainsec {
+    height: 100vh;
+    width: 100%;
+    background-image: url(img/bgr1.jpg);
+    background-position: bottom;
+    background-size: cover;
+    background-repeat: no-repeat;
+    z-index: 1;
+}
+
+.navigationbar {
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 30px 10%;
+    z-index: 2;
+    
+    
+}
+
+.navigationbar li {
+    padding: 0px 20px;
+    list-style: none;
+}
+
+.navigationbar li a {
+    text-decoration: none;
+    color: white;
+    font-family: 'Raleway';
+    font-weight: bold;
+}
+
+.navigationbar ul {
+    display: flex;
+}
+
+.btn1 {
+    text-decoration: none;
+    color: white;
+    font-family: 'Raleway';
+    border: 1px solid;
+    padding: 8px;
+    border-radius: 10px;
+    background-color: rgb(120, 0, 0);
+
+}
+
+.maintitle {
+    position: absolute;
+    top: 0;
+    right: 0;
+    left: 0;
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+
+}
+
+.maintitle h1 {
+    color: white;
+    font-size: 72px;
+    font-family: 'Raleway';
+    font-weight: bold;
+}
+
+.maintitle p {
+    color: white;
+    font-size: 18px;
+    font-family: 'Raleway';
+}
+
+.ordertitle {
+    display: flex;
+    justify-content: center;
+    font-size: 52px;
+    font-family: 'economica';
+    font-weight: bold;
+    color: rgb(120, 0, 0);
+    padding: 40px;
+    padding-bottom: 80px;
+}
+
+.ordersteps {
+    display: flex;
+    justify-content: space-evenly;
+    padding-bottom: 50px;
+}
+
+.first {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    font-family: 'economica';
+    font-weight: bold;
+    font-size: 24px;
+}
+
+.second {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    font-family: 'economica';
+    font-weight: bold;
+    font-size: 24px;
+}
+
+.third {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    font-family: 'economica';
+    font-weight: bold;
+    font-size: 24px;
+}
+
+.first img { 
+    height: 100px;
+}
+
+.second img { 
+    height: 100px;
+}
+
+.third img { 
+    height: 100px;
+}
+
+.menu {
+    background-image: url(img/background.jpg);
+    background-size: cover;
+    padding: 50px;
+}
+
+.menutitle {
+    font-size: 52px;
+    font-family: 'economica';
+    font-weight: bold;
+    color: rgb(120, 0, 0);
+    padding-bottom: 40px;
+}
+
+.menuitems {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.items {
+    display: flex;
+    align-items: center;
+}
+
+.items img {
+    height: 200px;
+    width: 200px;
+
+}
+
+.itemelements {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    padding: 50px;
+}
+
+.itemelements h3 {
+    font-size: 42px;
+    font-family: 'economica';
+    font-weight: bold;
+}
+
+.itemelements tr {
+    font-size: 18px;
+    font-family: 'raleway';
+    font-weight: bold;
+    color: rgb(80, 80, 80);
+}
+
+.price {
+    text-align: right;
+}
+
+.findus {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+.findustitle h2 {
+    font-size: 52px;
+    font-family: 'raleway';
+    color: rgb(120, 0, 0);
+    padding-top: 50px;
+}
+
+.address img {
+    height: 20px;
+    object-fit: contain;
+}
+
+.address {
+    font-size: 24px;
+    font-family: 'raleway';
+    padding: 20px;
+}
+
+.map iframe {
+    height: 600px;
+    width: 100%;
+    border: 0px;
+}
+
+footer {
+    padding: 30px;
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+}
+
+.footerlogo img {
+    width: 200px;
+}
+
+.socials img {
+    height: 50px;
+    padding-left: 10px;
+    padding-right: 10px;
+}
+
+@media(max-width: 1000px) {
+
+    h1 {
+        text-align: center;
+    }
+
+    .hide-mobile {
+        display: none;
+    }
+
+    .ordersteps {
+        flex-direction: column;
+    }
+
+    h2 {
+        font-size: 42px;
+    }
+
+    .first {
+        padding: 20px;
+    }
+
+    .second {
+        padding: 20px;
+    }
+
+    .third {
+        padding: 20px;
+    }
+
+    .map iframe {
+        height: 300px;
+    }
+
+    .socials img {
+        height: 25px;
+    }
+
+    .itemelements tr {
+        font-size: 14px;
+    }
+
+    .items img {
+        height: 150px !important;
+        width: 150px !important;
+    }
+
+    .footerlogo img {
+        width: 150px;
+    }
+
+    .address {
+        text-align: center;
+    }
+}
